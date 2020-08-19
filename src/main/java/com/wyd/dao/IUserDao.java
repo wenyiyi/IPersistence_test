@@ -11,11 +11,17 @@ public interface IUserDao {
     /**
      * 查询所有用户
      */
-    List<User> selectList() throws PropertyVetoException, DocumentException, Exception;
+    List<User> selectList() throws Exception;
 
     /**
      * 根据条件进行用查询
      */
     User selectOne(User user) throws Exception;
+
+    int update(User user) throws Exception;
+
+    int delete(User user) throws Exception;
+
+    int save(User user) throws Exception;
 
 }
